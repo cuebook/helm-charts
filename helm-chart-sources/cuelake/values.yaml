@@ -1,0 +1,18 @@
+cuelakeConfig:
+  # =============================================================
+  # S3 Config
+  BUCKET_NAME: YourBucketName
+  PREFIX: files/
+  
+  # =============================================================
+  # Postgres Config
+  # Change below properties to point to your production database
+  # Comment these properties to use sqlite as database
+  # POSTGRES_DB_HOST: localhost
+  # POSTGRES_DB_USERNAME: postgres
+  # POSTGRES_DB_PASSWORD: postgres
+  # POSTGRES_DB_SCHEMA: cuelake
+  # POSTGRES_DB_PORT: 5432
+
+
+nodeSelector: {}
