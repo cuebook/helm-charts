@@ -9,7 +9,7 @@ metadata:
   name: zeppelin-server-role
 rules:
 - apiGroups: [""]
-  resources: ["pods", "services", "configmaps"]
+  resources: ["pods", "pods/exec", "services", "configmaps"]
   verbs: ["create", "get", "update", "patch", "list", "delete", "watch"]
 - apiGroups: ["rbac.authorization.k8s.io"]
   resources: ["roles", "rolebindings"]
