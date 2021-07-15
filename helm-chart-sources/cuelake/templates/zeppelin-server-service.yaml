@@ -9,4 +9,4 @@ spec:
     - name: rpc
       port: 12320
   selector:
-    app.kubernetes.io/name: zeppelin-server
+    app.kubernetes.io/name: zeppelin-server-main

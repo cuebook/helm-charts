@@ -1,8 +1,9 @@
 cuelakeConfig:
   # =============================================================
   # S3 Config
-  BUCKET_NAME: YourBucketName
-  PREFIX: files/
+  S3_BUCKET_NAME: YourBucketName
+  S3_FILES_PREFIX: files/
+  HADOOP_S3_PREFIX: cuelake/
   
   # =============================================================
   # Postgres Config
@@ -14,5 +15,11 @@ cuelakeConfig:
   # POSTGRES_DB_SCHEMA: cuelake
   # POSTGRES_DB_PORT: 5432
 
+  ## Change below properties to point to your metastore database
+  # METASTORE_POSTGRES_HOST="localhost"
+  # METASORE_POSTGRES_PORT=5432
+  # METASORE_POSTGRES_USERNAME="postgres"
+  # METASORE_POSTGRES_PASSWORD="postgres"
+  # METASORE_POSTGRES_DATABASE="cuelake_metastore"
 
 nodeSelector: {}

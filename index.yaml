@@ -3,12 +3,22 @@ entries:
   cuelake:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-05-24T02:39:15.003036+05:30"
+    created: "2021-07-15T12:49:05.360890215+05:30"
+    description: A Helm chart for Kubernetes
+    digest: 25c40246877da535d3b740d5118ea153fc8fe9e551344ec604a15081d1e11180
+    name: cuelake
+    type: application
+    urls:
+    - cuelake-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-07-15T12:49:05.360639744+05:30"
     description: A Helm chart for Kubernetes
     digest: af709a805051ef801f9c360776e78be8fc7f85e1135766ccdab066b42e866e4d
     name: cuelake
     type: application
     urls:
-    - https://cuebook.github.io/helm-charts/cuelake-0.1.0.tgz
+    - cuelake-0.1.0.tgz
     version: 0.1.0
-generated: "2021-05-24T02:39:15.002521+05:30"
+generated: "2021-07-15T12:49:05.360320497+05:30"

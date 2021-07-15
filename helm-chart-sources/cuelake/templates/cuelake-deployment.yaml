@@ -16,6 +16,7 @@ spec:
       labels:
         app.kubernetes.io/name: lakehouse
     spec:
+      serviceAccountName: zeppelin-server
       nodeSelector:
         {{- toYaml .Values.nodeSelector | nindent 8 }}
       volumes:
@@ -24,10 +25,20 @@ spec:
           claimName: lakehouse-db-volume-pvc
       containers:
       - name: lakehouse
-        image: cuebook/lakehouse:latest
+        image: cuebook/lakehouse:0.2
+        resources:
+          requests:
+            memory: "2560Mi"
+            cpu: "250m"
         volumeMounts:
         - name: lakehouse-db-volume     # configure this to persist db
           mountPath: /code/db
+        env:
+        - name: POD_NAMESPACE
+          valueFrom:
+            fieldRef:
+              apiVersion: v1
+              fieldPath: metadata.namespace
         envFrom:
         - configMapRef:
             name: cuelake-conf-map
