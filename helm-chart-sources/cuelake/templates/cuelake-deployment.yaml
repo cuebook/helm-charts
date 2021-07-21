@@ -16,7 +16,7 @@ spec:
       labels:
         app.kubernetes.io/name: lakehouse
     spec:
-      serviceAccountName: zeppelin-server
+      serviceAccountName: cuelake
       nodeSelector:
         {{- toYaml .Values.nodeSelector | nindent 8 }}
       volumes:

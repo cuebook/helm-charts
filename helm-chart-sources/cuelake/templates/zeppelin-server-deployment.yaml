@@ -18,7 +18,7 @@ spec:
     spec:
       nodeSelector:
         {{- toYaml .Values.nodeSelector | nindent 8 }}
-      serviceAccountName: zeppelin-server
+      serviceAccountName: cuelake
       volumes:
       - name: zeppelin-server-notebook-volume
         persistentVolumeClaim:
