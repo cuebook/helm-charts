@@ -6,7 +6,7 @@ metadata:
 kind: Role
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
-  name: cuelake
+  name: cuelake-role
 rules:
 - apiGroups: [""]
   resources: ["pods", "pods/exec", "services", "configmaps"]
@@ -18,7 +18,7 @@ rules:
 kind: RoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
-  name: cuelake-binding
+  name: cuelake-role-binding
 subjects:
 - kind: ServiceAccount
   name: cuelake
