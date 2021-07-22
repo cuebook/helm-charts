@@ -3,9 +3,9 @@ entries:
   cuelake:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-07-21T19:25:35.215351017+05:30"
+    created: "2021-07-22T17:43:05.58356185+05:30"
     description: A Helm chart for Kubernetes
-    digest: 9272ccc75b31941201efc7e276589f47c422a4716895dae59d7edbdaeab1cdc8
+    digest: 4e4502529ae9bdd2d0c6da9387b2d2be0ab5e98f5b33b20e4a2a967feeb99bb8
     name: cuelake
     type: application
     urls:
@@ -13,7 +13,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-07-21T19:25:35.21509536+05:30"
+    created: "2021-07-22T17:43:05.583338254+05:30"
     description: A Helm chart for Kubernetes
     digest: 756d91b275c0eb5a6918b32f6bc44ac8f291bd1e67c13a60912b8861009ad79f
     name: cuelake
@@ -23,7 +23,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-07-21T19:25:35.214860003+05:30"
+    created: "2021-07-22T17:43:05.582444138+05:30"
     description: A Helm chart for Kubernetes
     digest: af709a805051ef801f9c360776e78be8fc7f85e1135766ccdab066b42e866e4d
     name: cuelake
@@ -31,4 +31,4 @@ entries:
     urls:
     - cuelake-0.1.0.tgz
     version: 0.1.0
-generated: "2021-07-21T19:25:35.21455414+05:30"
+generated: "2021-07-22T17:43:05.564964494+05:30"
