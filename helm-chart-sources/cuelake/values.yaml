@@ -1,4 +1,4 @@
-cuelakeConfig:
+configMap:
   # =============================================================
   # S3 Config
   S3_BUCKET_NAME: YourBucketName
@@ -13,13 +13,13 @@ cuelakeConfig:
   # POSTGRES_DB_USERNAME: postgres
   # POSTGRES_DB_PASSWORD: postgres
   # POSTGRES_DB_SCHEMA: cuelake
-  # POSTGRES_DB_PORT: 5432
+  # POSTGRES_DB_PORT: '5432'
 
   ## Change below properties to point to your metastore database
-  # METASTORE_POSTGRES_HOST="localhost"
-  # METASORE_POSTGRES_PORT=5432
-  # METASORE_POSTGRES_USERNAME="postgres"
-  # METASORE_POSTGRES_PASSWORD="postgres"
-  # METASORE_POSTGRES_DATABASE="cuelake_metastore"
+  # METASTORE_POSTGRES_HOST: localhost
+  # METASORE_POSTGRES_PORT: '5432'
+  # METASORE_POSTGRES_USERNAME: postgres
+  # METASORE_POSTGRES_PASSWORD: postgres
+  # METASORE_POSTGRES_DATABASE: cuelake_metastore
 
 nodeSelector: {}
